@@ -1,0 +1,58 @@
+{% extends ':Layout:layout.html.twig' %}
+{% block body %}
+    <section id="inner-banner">
+        <div class="container">
+            <h1>Contact us</h1>
+        </div>
+    </section>
+
+
+    <div id="main">
+
+        <section class="contact-section">
+            <div class="map-box">
+                <div id="map_contact_4" class="map_canvas active"></div>
+                <div class="contact-form padd-tb">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-sm-8">
+                                <h2>Get in Touch</h2>
+                                <form action="http://html.crunchpress.com/jobinn/contact-form.php" method="post">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input name="name" required pattern="[a-zA-Z ]+" type="text" placeholder="Name">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input name="email" required pattern="^[a-zA-Z0-9-\_.]+@[a-zA-Z0-9-\_.]+\.[a-zA-Z0-9.]{2,5}$" type="text" placeholder="Email">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input name="subject" required type="text" placeholder="Subject">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea name="comments" required cols="10" rows="10" placeholder="Comments"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input name="comments" type="submit" value="Submit">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-3 col-sm-4">
+                                <div class="address-box">
+                                    <address>
+                                        <ul>
+                                            <li> <i class="fa fa-phone"></i> <strong>+440 875 369 200</strong> <strong>+440 875 123 697</strong> </li>
+                                            <li> <i class="fa fa-envelope-o"></i> <a href="mailto:"><span class="__cf_email__" data-cfemail="4b22252d240b21242922252565282426">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a> </li>
+                                            <li> <i class="fa fa-globe"></i> <a href="#">www.jobinn.com</a> </li>
+                                        </ul>
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+{% endblock %}

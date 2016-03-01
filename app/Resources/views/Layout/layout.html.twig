@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+        <link href="{{ asset('css/custom.css') }}" rel="stylesheet" type="text/css">
+
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+
+        <link href="{{ asset('css/color.css') }}" rel="stylesheet" type="text/css">
+
+        <link href="{{ asset('css/responsive.css') }}" rel="stylesheet" type="text/css">
+
+        <link href="{{ asset('css/owl.carousel.css') }}" rel="stylesheet" type="text/css">
+
+        <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+
+        <link href="{{ asset('css/jquery.mCustomScrollbar.css') }}" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,700,900' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="theme-style-1">
+    <div id="wrapper">
+
+        <header id="header">
+
+            <div class="cp-burger-nav">
+
+                <div id="cp_side-menu-btn" class="cp_side-menu"><a href="#" class=""><img src="{{ asset('images/menu-icon.png') }}" alt="img"></a></div>
+
+
+                <div id="cp_side-menu"> <a href="#" id="cp-close-btn" class="crose"><i class="fa fa-close"></i></a>
+                    <div class="cp-top-bar">
+                        <h4>For any Queries: +800 123 4567</h4>
+                        <div class="login-section"> <a href="login.html" class="btn-login">Log in</a> <a href="signup.html" class="btn-login">Signup</a> </div>
+                    </div>
+                    <strong class="logo-2"><a href="index-2.html"><img src="{{ asset('images/sidebar-logo.png') }}" alt="img"></a></strong>
+                    <div class="content mCustomScrollbar">
+                        <div id="content-1" class="content">
+                            <div class="cp_side-navigation">
+                                <nav>
+                                    <ul class="navbar-nav">
+                                        <li><a href="employers.html">Acceuil</a></li>
+                                        <li><a href="employers.html">Déposer un projet</a></li>
+                                        <li><a href="employers.html">Récruter</a></li>
+                                        <li><a href="employers.html">Comment ça marche ?</a></li>
+
+                                        <li><a href="#">Features</a> </li>
+                                        <li><a href="contact.html">Contact</a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cp-sidebar-social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        </ul>
+                    </div>
+                    <strong class="copy">JobInn &copy; 2016, All Rights Reserved</strong> </div>
+
+            </div>
+
+            <div class="container">
+
+                <div class="navigation-col">
+                    <nav class="navbar navbar-inverse">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                            <strong class="logo"><a href="index-2.html"><img src="{{ asset('images/logo.png') }}" alt="logo"></a></strong> </div>
+                        <div id="navbar" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav" id="nav">
+                                <li><a href="{{ path('homepage') }}">Acceuil</a></li>
+                                <li><a href="employers.html">Déposer un projet</a></li>
+                                <li><a href="employers.html">Récruter</a></li>
+                                <li><a href="employers.html">Comment ça marche ?</a></li>
+                                <li><a href="contact.html">Contact</a> </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="user-option-col">
+                <div class="thumb">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <img src="{{ asset('images/user-img.png') }}" alt="img"></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Manage Account</a></li>
+                            <li><a href="#">Change Password</a></li>
+                            <li><a href="#">Edit Profile</a></li>
+                            <li><a href="#">Log off</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dropdown-box">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <img src="{{ asset('images/option-icon.png') }}" alt="img"> </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li> <a href="#" class="login-round"><i class="fa fa-sign-in"></i></a> <a href="#" class="btn-login">Log in with Jobinn</a> </li>
+                            <li> <a href="#" class="login-round"><i class="fa fa-user-plus"></i></a> <a href="#" class="btn-login">Log in with Jobinn</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        {% block body %}{% endblock %}
+        <footer id="footer">
+            <div class="text-box box">
+                <h4>About Jobs Alert</h4>
+                <p>
+                    Vworkit‬ relie les entreprises avec des Travailleurs indépendants en ligne. Vworkit été fondée en 2015 En Tunisie, par un jeune développeur web Tunisien.
+                </p>
+            </div>
+            <div class="box">
+                <h4>Keywords by Role</h4>
+                <ul>
+                    <li><a href="#">Administrator</a></li>
+                    <li><a href="#">Accounts Officer</a></li>
+                    <li><a href="#">PHP Developer</a></li>
+                    <li><a href="#">UI/UX Designer</a></li>
+                    <li><a href="#">Project Manager</a></li>
+                    <li><a href="#">Public Relation Officer</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h4>Keywords by Skills</h4>
+                <ul>
+                    <li><a href="#">Administrator</a></li>
+                    <li><a href="#">Accounts Officer</a></li>
+                    <li><a href="#">PHP Developer</a></li>
+                    <li><a href="#">UI/UX Designer</a></li>
+                    <li><a href="#">Project Manager</a></li>
+                    <li><a href="#">Public Relation Officer</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h4>Keywords by Location</h4>
+                <ul>
+                    <li><a href="#">Administrator</a></li>
+                    <li><a href="#">Accounts Officer</a></li>
+                    <li><a href="#">PHP Developer</a></li>
+                    <li><a href="#">UI/UX Designer</a></li>
+                    <li><a href="#">Project Manager</a></li>
+                    <li><a href="#">Public Relation Officer</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h4>Keywords by Market</h4>
+                <ul>
+                    <li><a href="#">Administrator</a></li>
+                    <li><a href="#">Accounts Officer</a></li>
+                    <li><a href="#">PHP Developer</a></li>
+                    <li><a href="#">UI/UX Designer</a></li>
+                    <li><a href="#">Project Manager</a></li>
+                    <li><a href="#">Public Relation Officer</a></li>
+                </ul>
+            </div>
+            <form action="#">
+                <h4>Subscribe for Latest Jobs Alerts</h4>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Email" required>
+                <input type="submit" value="Subscribe Alerts">
+            </form>
+            <div class="container">
+                <div class="bottom-row"> <strong class="copyrights">JobInn &copy; 2016, All Rights Reserved, Design &amp; Developed By: <a href="http://crunchpress.com/" target="_blank">CrunchPress</a></strong>
+                    <div class="footer-social">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
+
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+
+    <script src="{{ asset('js/jquery.velocity.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.kenburnsy.js') }}"></script>
+
+    <script src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+
+    <script src="{{ asset('js/custom.js') }}"></script>
+
+    <script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

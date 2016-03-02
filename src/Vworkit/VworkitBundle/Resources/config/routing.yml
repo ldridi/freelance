@@ -1,0 +1,11 @@
+vworkit_homepage:
+    path:     /
+    defaults: { _controller: VworkitBundle:Default:index }
+
+UtilisateurBundle_page:
+    resource: "@VworkitBundle/Resources/config/routing/page.yml"
+    prefix:   /page
+
+UtilisateurBundle_projet:
+    resource: "@VworkitBundle/Resources/config/routing/projet.yml"
+    prefix:   /

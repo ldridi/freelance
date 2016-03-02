@@ -1,0 +1,3 @@
+deposer:
+    path:     /deposer
+    defaults: { _controller: VworkitBundle:Projet:deposer }

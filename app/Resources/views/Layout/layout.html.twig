@@ -20,6 +20,8 @@
 
         <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 
+
+
         <link href="{{ asset('css/jquery.mCustomScrollbar.css') }}" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,700,900' rel='stylesheet' type='text/css'>
     </head>
@@ -45,7 +47,7 @@
                                 <nav>
                                     <ul class="navbar-nav">
                                         <li><a href="employers.html">Acceuil</a></li>
-                                        <li><a href="employers.html">Déposer un projet</a></li>
+                                        <li><a href="">Déposer un projet</a></li>
                                         <li><a href="employers.html">Récruter</a></li>
                                         <li><a href="employers.html">Comment ça marche ?</a></li>
 
@@ -78,10 +80,10 @@
                         <div id="navbar" class="collapse navbar-collapse">
                             <ul class="nav navbar-nav" id="nav">
                                 <li><a href="{{ path('homepage') }}">Acceuil</a></li>
-                                <li><a href="employers.html">Déposer un projet</a></li>
+                                <li><a href="{{ path('deposer') }}">Déposer un projet</a></li>
                                 <li><a href="employers.html">Récruter</a></li>
                                 <li><a href="employers.html">Comment ça marche ?</a></li>
-                                <li><a href="contact.html">Contact</a> </li>
+                                <li><a href="{{ path('contact') }}">Contact</a> </li>
                             </ul>
                         </div>
                     </nav>
@@ -199,6 +201,10 @@
     <script src="{{ asset('js/jquery.kenburnsy.js') }}"></script>
 
     <script src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+
+    <script src="{{ asset('js/editor.js') }}"></script>
+
+    <script src="{{ asset('js/jquery.accordion.js') }}"></script>
 
     <script src="{{ asset('js/custom.js') }}"></script>
 

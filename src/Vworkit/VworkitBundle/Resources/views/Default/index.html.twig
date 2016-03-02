@@ -1,0 +1,295 @@
+{% extends ':Layout:layout.html.twig' %}
+{% block body %}
+
+    <div class="banner-outer">
+        <div id="banner" class="element"> <img src="{{ asset('images/banner-img-1.png') }}" alt="banner"> </div>
+        <div class="caption">
+            <div class="holder">
+                <h1>Search Online Jobs or Hire Employees!</h1>
+                <form action="#">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <input type="text" placeholder="Enter Job Title, Skills or Company">
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <input type="text" placeholder="Enter City, State, Province or Country">
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <input type="text" placeholder="Category">
+                            </div>
+                            <div class="col-md-1 col-sm-1">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="banner-menu">
+                    <ul>
+                        <li><a href="#">San Francisco</a></li>
+                        <li><a href="#">Palo Alto</a></li>
+                        <li><a href="#">Mountain View</a></li>
+                        <li><a href="#">Sacramento</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">United Kindom</a></li>
+                        <li><a href="#">Asia Pacific</a></li>
+                    </ul>
+                </div>
+                <div class="btn-row"> <a href="job-seekers.html"><i class="fa fa-user"></i>I’m a Jobseeker</a> <a href="employers.html"><i class="fa fa-building-o"></i>I’m an Employer</a> </div>
+            </div>
+        </div>
+        <div class="browse-job-section">
+            <div class="container">
+                <div class="holder"> <a href="jobs.html" class="btn-brows">Browse Jobs</a> <strong class="title">Finds Jobs in San Francisco, Palo Alto, Mountain View, Sacramento, New York, United Kindom, Asia Pacific</strong> </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main">
+        <section class="process-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon-box"><i class="fa fa-money"></i></div>
+                        <div class="text-box">
+                            <h4>Keywords by Skills</h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box p-color-2"><i class="fa fa-user-secret"></i></div>
+                        <div class="text-box">
+                            <h4>No Middleman</h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-box p-color-3"><i class="fa fa-check-square-o"></i></div>
+                        <div class="text-box">
+                            <h4>Apply Privately</h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-categories">
+            <div class="container">
+                <div class="clearfix">
+                    <h2>Popular Jobs Categories</h2>
+                    <a href="#" class="btn-style-1">Explore All Jobs</a> </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box"> <img src="{{ asset('images/categories-icon-1.png') }}" alt="img">
+                            <h4><a href="#">Art, Design &amp; Multimedia</a></h4>
+                            <strong>6,213 Jobs</strong>
+                            <p>Available in Design &amp; Multimedia</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box"> <img src="{{ asset('images/categories-icon-2.png') }}" alt="img">
+                            <h4><a href="#">Restaurant, Food, Hotels</a></h4>
+                            <strong>3,750 Jobs</strong>
+                            <p>Available in Restaurant &amp; Hotels</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box"> <img src="{{ asset('images/categories-icon-3.png') }}" alt="img">
+                            <h4><a href="#">Transporation</a></h4>
+                            <strong>1,265 Jobs</strong>
+                            <p>Available in Transportation</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box"> <img src="{{ asset('images/categories-icon-4.png') }}" alt="img">
+                            <h4><a href="#">Healthcare &amp; Medicine</a></h4>
+                            <strong>5,913 Jobs</strong>
+                            <p>Available in Medical</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box"> <img src="{{ asset('images/categories-icon-5.png') }}" alt="img">
+                            <h4><a href="#">Software &amp; Development</a></h4>
+                            <strong>7,418 Jobs</strong>
+                            <p>Available in IT</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box"> <img src="{{ asset('images/categories-icon-6.png') }}" alt="img">
+                            <h4><a href="#">Accounting &amp; Finance</a></h4>
+                            <strong>8,045 Jobs</strong>
+                            <p>Available in Accounts &amp; Finance</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box"> <img src="{{ asset('images/categories-icon-7.png') }}" alt="img">
+                            <h4><a href="#">Education &amp; Academia</a></h4>
+                            <strong>3,891 Jobs</strong>
+                            <p>Available in Education</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="box"> <img src="{{ asset('images/categories-icon-8.png') }}" alt="img">
+                            <h4><a href="#">Construction, Engineering</a></h4>
+                            <strong>9,942 Jobs</strong>
+                            <p>Available in Architect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="call-action-section">
+            <div class="container">
+                <div class="text-box">
+                    <h2>Better Results with Standardized Hiring Process</h2>
+                    <p>Your quality of hire increases when you treat everyone fairly and equally. Having multiple recruiters
+                        working on your hiring is beneficial.</p>
+                </div>
+                <a href="#" class="btn-get">Get Registered &amp; Try Now</a> </div>
+        </section>
+        <section class="facts-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="round-icon"><i class="fa fa-users"></i></div>
+                        <strong class="number counter">79,853</strong> <a href="#" class="btn-bg-color-1 facts-btn">Registered Members</a> </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="round-icon"><i class="fa fa-paper-plane"></i></div>
+                        <strong class="number counter">4,931</strong> <a href="#" class="btn-bg-color-2 facts-btn">Jobs Posted</a> </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="round-icon"><i class="fa fa-check-square-o"></i></div>
+                        <strong class="number counter">68,523</strong> <a href="#" class="btn-bg-color-3 facts-btn">Posted Resumes</a> </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="round-icon"><i class="fa fa-building-o"></i></div>
+                        <strong class="number counter">1002</strong> <a href="#" class="btn-bg-color-4 facts-btn">Companies</a> </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-section padd-tb">
+            <div class="container">
+                <h2>Take a Tour How it Works</h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="text-box">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <em>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</em> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis</p>
+                            <a href="#" class="btn-style-1">Learn More</a> </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="video-frame">
+
+                            <a href="#" class="play" data-toggle="modal" data-target="#myModal"></a>
+
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe src="https://player.vimeo.com/video/83884718" style="width:100%; height:557px; border:0;"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="container">
+                <div id="testimonials-slider" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="holder">
+                            <div class="thumb"><img src="{{ asset('') }}images/testo-img.png" alt="img"></div>
+                            <div class="text-box"> <em>One morning, when John Doe woke from troubled dreams, he found himself transformed in his Collaboratively administrate empowered markets via plug-and-play networks. Donec volutpat enim at interdum pretium. Vestibulum ante ipsum primis.</em>
+                                <ul class="testimonials-rating">
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
+                                </ul>
+                                <strong class="name">John Doe</strong> <span class="post">Database Manager</span> </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="holder">
+                            <div class="thumb"><img src="{{ asset('') }}images/testo-img.png" alt="img"></div>
+                            <div class="text-box"> <em>One morning, when John Doe woke from troubled dreams, he found himself transformed in his Collaboratively administrate empowered markets via plug-and-play networks. Donec volutpat enim at interdum pretium. Vestibulum ante ipsum primis.</em>
+                                <ul class="testimonials-rating">
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-star-o"></i></a></li>
+                                </ul>
+                                <strong class="name">John Doe</strong> <span class="post">Database Manager</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="client-logo-row">
+                <div class="holder">
+                    <ul>
+                        <li><img src="{{ asset('images/logo/logo-1.png') }}" alt="img"></li>
+                        <li><img src="{{ asset('images/logo/logo-2.png') }}" alt="img"></li>
+                        <li><img src="{{ asset('images/logo/logo-3.png') }}" alt="img"></li>
+                        <li><img src="{{ asset('images/logo/logo-4.png') }}" alt="img"></li>
+                        <li><img src="{{ asset('images/logo/logo-5.png') }}" alt="img"></li>
+                        <li><img src="{{ asset('images/logo/logo-6.png') }}" alt="img"></li>
+                    </ul>
+                </div>
+            </section>
+
+        </section>
+
+
+        <section class="post-section padd-tb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="post-box">
+                            <div class="frame"><a href="#"><img src="{{ asset('images/blog/post-img-1.jpg') }}" alt="img"></a></div>
+                            <div class="text-box"> <strong class="date"><i class="fa fa-calendar"></i>Mar 17, 2016</strong>
+                                <h4><a href="#">Middle Class jobs are being replaced
+                                        by burger-flipping, retail sales.</a></h4>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa quae.</p>
+                                <div class="thumb"><a href="#"><img src="{{ asset('images/admin-img.jpg') }}" alt="img"></a></div>
+                                <strong class="name"><span>By</span> Anna Smith</strong> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="post-box">
+                            <div class="frame"><a href="#"><img src="{{ asset('images/blog/post-img-2.jpg') }}" alt="img"></a></div>
+                            <div class="text-box"> <strong class="date"><i class="fa fa-calendar"></i>Feb 20, 2016 </strong>
+                                <h4><a href="#">There are many variations of passage
+                                        of Lorem Ipsum available.</a></h4>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa quae.</p>
+                                <div class="thumb"><a href="#"><img src="{{ asset('images/admin-img.jpg') }}" alt="img"></a></div>
+                                <strong class="name"><span>By</span> Anna Smith</strong> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="post-box">
+                            <div class="frame"><a href="#"><img src="{{ asset('images/blog/post-img-3.jpg') }}" alt="img"></a></div>
+                            <div class="text-box"> <strong class="date"><i class="fa fa-calendar"></i>Feb 09, 2016</strong>
+                                <h4><a href="#">But I must explain to you how all this
+                                        mistaken idea of denouncing pleasure.</a></h4>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa quae.</p>
+                                <div class="thumb"><a href="#"><img src="{{ asset('images/admin-img.jpg') }}" alt="img"></a></div>
+                                <strong class="name"><span>By</span> Anna Smith</strong> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+{% endblock %}

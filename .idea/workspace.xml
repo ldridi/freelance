@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b647cdd-3c4f-4d77-afbb-88978d3b139b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vworkit/VworkitBundle/Controller/ProjetController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vworkit/VworkitBundle/Resources/config/routing/projet.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Vworkit/VworkitBundle/Resources/views/Projet/deposer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Layout/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Layout/layout.html.twig" />
-    </list>
+    <list default="true" id="7b647cdd-3c4f-4d77-afbb-88978d3b139b" name="Default" comment="" />
     <ignored path="freelance.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -502,7 +496,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2579425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />

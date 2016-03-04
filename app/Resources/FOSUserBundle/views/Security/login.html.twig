@@ -1,0 +1,52 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+    <section id="inner-banner">
+        <div class="container">
+            <h1>Login To Your Account</h1>
+        </div>
+    </section>
+
+
+    <div id="main">
+
+        <section class="signup-section">
+            <div class="container">
+                <div class="holder">
+                    <div class="thumb"><img src="{{ asset('images/signup.png') }}" alt="img"></div>
+                    <form action="{{ path("fos_user_security_check") }}" method="post">
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                        <div class="input-box"> <i class="fa fa-user"></i>
+                            <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
+                        </div>
+                        <div class="input-box"> <i class="fa fa-unlock"></i>
+                            <input type="password" id="password" name="_password" required="required" />
+                        </div>
+                        <div class="check-box">
+                            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                            <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                        </div>
+                        <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                        <br>
+                        <a href="#" class="login">Forgot your Password</a> <b>OR</b>
+                        <div class="login-social">
+                            <h4>Log in with Your Social Account</h4>
+                            <ul>
+                                <li> <a href="#" class="fb"><i class="fa fa-facebook"></i>Facebook Login</a> </li>
+                                <li> <a href="#" class="gp"><i class="fa fa-google-plus"></i>Google Plus Login</a> </li>
+                                <li> <a href="#" class="tw"><i class="fa fa-twitter"></i>Twitter Login</a> </li>
+                            </ul>
+                            <em>You Don’t have an Account? <a href="#">SIGN UP NOW</a></em>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+{% endblock fos_user_content %}

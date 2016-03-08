@@ -19,7 +19,7 @@ fos_user_change_password:
 
 utilisateur:
     resource: "@UtilisateurBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /client
 
 vworkit:
     resource: "@VworkitBundle/Resources/config/routing.yml"

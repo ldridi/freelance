@@ -1,8 +1,37 @@
 {% trans_default_domain 'FOSUserBundle' %}
-
-{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'registration.submit'|trans }}" />
+<section id="inner-banner">
+    <div class="container">
+        <h1>Register Your Account</h1>
     </div>
-{{ form_end(form) }}
+</section>
+
+
+<div id="main">
+
+    <section class="signup-section">
+        <div class="container">
+            <div class="holder">
+                <div class="thumb"><img src="{{ asset('images/signup.png') }}" alt="img"></div>
+                    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+                        {{ form_widget(form) }}
+                        <div class="input-box"> <i class="fa fa-pencil"></i>
+                            {{ form_widget(form.email) }}
+                        </div>
+                        <div class="input-box"> <i class="fa fa-pencil-square-o"></i>
+                            {{ form_widget(form.username) }}
+                        </div>
+                        <div class="input-box"> <i class="fa fa-pencil-square-o"></i>
+                            {{ form_widget(form.plainPassword.first) }}
+                        </div>
+                        <div class="input-box"> <i class="fa fa-pencil-square-o"></i>
+                            {{ form_widget(form.plainPassword.second) }}
+                        </div>
+                        <div>
+                            <input type="submit" value="{{ 'registration.submit'|trans }}" />
+                        </div>
+                    {{ form_end(form) }}
+            </div>
+        </div>
+    </section>
+
+</div>
